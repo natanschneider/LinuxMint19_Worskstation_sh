@@ -73,4 +73,4 @@ sudo apt autoremove -y
 
 # End ##
 
-echo "This is the end!"
+echo "May the force be with you"
