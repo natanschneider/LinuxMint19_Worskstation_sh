@@ -1,34 +1,36 @@
 #!/bin/bash
 
+sudo su 
+
 ## remove apt lock ##
 
-sudo rm /var/lib/dpkg/lock-frontend ; sudo rm /var/cache/apt/archives/lock ;
+rm /var/lib/dpkg/lock-frontend ; rm /var/cache/apt/archives/lock ;
 
 ## technology loves the letter X ###
 
-sudo apt update
+apt update
 
 ## installing from mint store ##
 
-sudo apt install mint-meta-codecs &&
+apt install mint-meta-codecs &&
 
-sudo apt install python3 &&
+apt install python3 &&
 
-sudo apt install snapd &&
-
-
-sudo apt update &&
+apt install snapd &&
 
 
-sudo snap install snap-store &&
+apt update &&
 
-sudo snap install gitkraken &&
 
-sudo snap install tor &&
+snap install snap-store &&
 
-sudo snap install spotify &&
+snap install gitkraken &&
 
-sudo snap install code --classic &&
+snap install tor &&
+
+snap install spotify &&
+
+snap install code --classic &&
 
 
 
@@ -53,22 +55,22 @@ wget -c https://releases.hyper.is/download/deb &&
 wget -c https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb &&
 
 
-sudo dpkg -i *.deb &&
+dpkg -i *.deb &&
 
 cd
 
 
 ## Updates ##
 
-sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
+apt update && apt dist-upgrade -y && apt autoclean -y && apt autoremove -y &&
 
-sudo apt update && sudo apt dist-upgrade -y
+apt update && apt dist-upgrade -y
 
 flatpak update
 
-sudo apt autoclean
+apt autoclean
 
-sudo apt autoremove -y
+apt autoremove -y
 
 
 # End ##
