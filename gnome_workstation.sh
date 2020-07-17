@@ -4,8 +4,8 @@ sudo rm /var/lib/dpkg/lock-frontend ; sudo rm /var/cache/apt/archives/lock ;
 
 sudo apt update && 
 
-apt install gnome-tweaks spotify-client code gitkraken caffeine python3 python-pip nautilus-dropbox docker docker-compose git build-essential -y &&
-apt update 
+apt install gnome-tweaks spotify-client code gitkraken caffeine python3 git -y &&
+apt update &&
 
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable &&
 sudo apt update && sudo apt install qbittorrent -y &&
